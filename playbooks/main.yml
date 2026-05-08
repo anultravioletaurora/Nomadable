@@ -1,0 +1,3 @@
+---
+- name: Deploy Nomad + Consul
+  ansible.builtin.import_playbook: anultravioletaurora.nomadintosh.nomadintosh
