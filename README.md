@@ -1,5 +1,7 @@
 # Nomadable
 
+<img src="logo.png" alt="Hashicorp Nomad Logo" width="200" height="225"  />
+
 An Ansible playbook for deploying [Nomad](https://developer.hashicorp.com/nomad/docs) + [Consul](https://developer.hashicorp.com/consul/docs) across a mixed-OS cluster.
 
 Nomadable is the parent playbook that composes the platform-specific child playbooks:
