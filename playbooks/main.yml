@@ -1,11 +1,6 @@
 ---
-- name: Deploy Nomad + Consul
-  hosts: all
-  gather_facts: true
-  pre_tasks:
-    - name: Set additional facts
-      ansible.builtin.include_role:
-        name: set_facts
-  tasks:
-    - name: Include Nomad + Consul playbook
-      ansible.builtin.import_playbook: anultravioletaurora.nomadintosh.nomadintosh
+- name: Deploy Nomadintosh
+  ansible.builtin.import_playbook: anultravioletaurora.nomadintosh.nomadintosh
+
+- name: Deploy Nomaduntu
+  ansible.builtin.import_playbook: anultravioletaurora.nomaduntu.nomaduntu

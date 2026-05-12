@@ -57,6 +57,23 @@ To limit execution to a single host or group:
 ansible-playbook -i inventory/hosts.yml playbooks/nomadable.yml --limit <hostname>
 ```
 
+### Deployment scripts
+
+The repository includes helper scripts for common workflows:
+
+- `./deploy.zsh` — runs the full deployment:
+
+```zsh
+./deploy.zsh
+```
+
+- `./check.zsh` — runs the playbook in Ansible check mode with diff output:
+
+```zsh
+./check.zsh
+```
+
+
 ## What it does
 
 Nomadable delegates to the appropriate child playbook for each host based on its OS:
